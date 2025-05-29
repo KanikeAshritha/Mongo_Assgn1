@@ -23,9 +23,6 @@ db.todo_table.updateMany({status : "Done"},
                          {$set : {status:true})
 SyntaxError: Unexpected token, expected "," (2:46)
 
-[0m [90m 1 |[39m db[33m.[39mtodo_table[33m.[39mupdateMany({status [33m:[39m [32m"Done"[39m}[33m,[39m
-[31m[1m>[22m[39m[90m 2 |[39m                          {$set [33m:[39m {status[33m:[39m[36mtrue[39m})
- [90m   |[39m                                               [31m[1m^[22m[39m[0m
 db.todo_table.updateMany({status : "Done"},
                          {$set : {status:true}})
 {
@@ -56,13 +53,7 @@ db.todo_table.find()
   task: 'Study',
   status: true
 }
-db.todo_table.updateMany({status : "Not Done"},
-                         {$set : {status:false})
-SyntaxError: Unexpected token, expected "," (2:47)
 
-[0m [90m 1 |[39m db[33m.[39mtodo_table[33m.[39mupdateMany({status [33m:[39m [32m"Not Done"[39m}[33m,[39m
-[31m[1m>[22m[39m[90m 2 |[39m                          {$set [33m:[39m {status[33m:[39m[36mfalse[39m})
- [90m   |[39m                                                [31m[1m^[22m[39m[0m
 db.todo_table.updateMany({status : "Not Done"},
                          {$set : {status:false}})
 {
